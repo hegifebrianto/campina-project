@@ -1,3 +1,35 @@
+body {
+    overflow-x: hidden;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.video-wrapper {
+    border: 2px solid #000;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    top: 200px;
+    justify-content: center;
+}
+
+.header {
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
 nav {
     position: absolute;
     top: 0;
@@ -1063,9 +1095,9 @@ button {
     height: 100%;
     /* left: 0; */
     position: absolute;
-    top: 600px;
+    top: 750px;
     width: 100%;
-    /* z-index: -1; */
+
 }
 
 #background1 {
