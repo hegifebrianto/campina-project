@@ -2,6 +2,44 @@ body {
     overflow-x: hidden;
 }
 
+.left {
+    text-align: left;
+    float: left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.centered {
+    text-align: center;
+}
+.wrapper {
+    width: 100%;
+    display: table;
+ }
+ .column {
+     display: table-cell;
+     width: 33.33%;
+     height: 200px;
+     border: 1px solid black;
+     min-width: 300px;
+     margin-bottom: 8px;
+ }
+.parent {
+    min-height: 200px;  
+    background: green;
+    display: flex;  
+  }  
+  
+  .child {    
+    margin-top: auto;
+    background: red;
+    padding:5px;
+    color:white;
+  }
+
 video {
     object-fit: cover;
     position: absolute;
@@ -12,6 +50,8 @@ video {
 }
 
 .video-wrapper {
+    margin: auto;
+    text-align: center;
     border: 2px solid #000;
     width: 800px;
     height: 400px;
@@ -22,6 +62,59 @@ video {
     align-items: center;
     top: 200px;
     justify-content: center;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.div-center {
+    /* border: 2px solid #000; */
+    width: 800px;
+    height: 400px;
+    position: relative;
+    /* overflow: hidden; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    top: 200px;
+    justify-content: center;
+    margin: auto;
+}
+
+#container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#container>div {
+    display: table-cell;
+}
+
+#left {
+    min-width: 150px;
+    height: 150px;
+}
+
+#middle {
+    vertical-align: top;
+    height: 150px;
+}
+
+#right {
+    min-width: 150px;
+    height: 150px;
 }
 
 .header {
@@ -52,6 +145,8 @@ nav .navbar {
     margin: auto;
     /* background: red; */
     padding: 0 50px;
+    font-family: 'don-jose';
+
 }
 
 .navbar .logo a {
@@ -84,15 +179,17 @@ nav .navbar .links li a {
     text-decoration: none;
     white-space: nowrap;
     color: blue;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 5;
+    font-size: 25px;
+    font-weight: 1000;
+    /* line-height: 5; */
+    line-height: 2.8;
+    font-family: 'don-jose';
 }
 
 .links li:hover .htmlcss-arrow,
 .links li:hover .js-arrow {
     /* transform: rotate(-90deg); */
-    transform: rotateX(-90deg);
+    /* transform: rotateX(-90deg); */
 
 }
 
@@ -162,6 +259,7 @@ nav .navbar .links li:hover .js-sub-menu {
     height: 105px;
     width: 40px;
     line-height: 2.3em;
+    color: blue;
 
 }
 
@@ -172,7 +270,6 @@ nav .navbar .links li:hover .js-sub-menu {
     line-height: 40px;
     text-align: center;
     font-size: 22px;
-    color: #fff;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -415,12 +512,7 @@ nav .navbar .links li:hover .js-sub-menu {
     right: 0;
 }
 
-@font-face {
-    font-family: 'don-jose';
-    src: url("../fonts/DonJose_Black.ttf") format("truetype"), url("../fonts/DonJose_Black.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal
-}
+
 
 * {
     text-decoration: none;
@@ -1020,10 +1112,9 @@ a:hover {
 }
 
 body {
-    background: #f2f3f5;
-    font-family: "colfax-medium", sans-serif;
+
     text-align: center;
-    color: #222
+    /* color: #222 */
 }
 
 body.no-scroll {
